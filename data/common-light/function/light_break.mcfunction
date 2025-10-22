@@ -1,0 +1,19 @@
+execute if block ~ ~ ~ minecraft:light[level=0] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"0"}}}}
+execute if block ~ ~ ~ minecraft:light[level=1] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"1"}}}}
+execute if block ~ ~ ~ minecraft:light[level=2] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"2"}}}}
+execute if block ~ ~ ~ minecraft:light[level=3] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"3"}}}}
+execute if block ~ ~ ~ minecraft:light[level=4] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"4"}}}}
+execute if block ~ ~ ~ minecraft:light[level=5] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"5"}}}}
+execute if block ~ ~ ~ minecraft:light[level=6] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"6"}}}}
+execute if block ~ ~ ~ minecraft:light[level=7] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"7"}}}}
+execute if block ~ ~ ~ minecraft:light[level=8] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"8"}}}}
+execute if block ~ ~ ~ minecraft:light[level=9] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"9"}}}}
+execute if block ~ ~ ~ minecraft:light[level=10] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"10"}}}}
+execute if block ~ ~ ~ minecraft:light[level=11] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"11"}}}}
+execute if block ~ ~ ~ minecraft:light[level=12] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"12"}}}}
+execute if block ~ ~ ~ minecraft:light[level=13] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"13"}}}}
+execute if block ~ ~ ~ minecraft:light[level=14] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1,components:{"minecraft:block_state":{level:"14"}}}}
+execute if block ~ ~ ~ minecraft:light[level=15] run summon item ~ ~ ~ {Item:{id:"minecraft:light",count:1}}
+execute align xyz run particle block{block_state:{Name:"minecraft:light",Properties:{level:"15"}}} ~0.5 ~0.5 ~0.5 0 0 0 0 4 normal @p
+execute if block ~ ~ ~ minecraft:light[waterlogged=false] run setblock ~ ~ ~ minecraft:air destroy
+execute if block ~ ~ ~ minecraft:light[waterlogged=true] run setblock ~ ~ ~ minecraft:water destroy
